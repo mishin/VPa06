@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Чек {{Номер заказа}}</title>
+    <style>
+        body {
+            margin: 24px;
+            color: #111;
+        }
+        h1 {
+            text-align: center;
+            font-size: 22px;
+            margin-bottom: 8px;
+        }
+        .meta {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        .total {
+            margin-top: 16px;
+            font-weight: 700;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Кассовый чек</h1>
+    <div class="meta">
+        Заказ № {{Номер заказа}}<br>
+        Дата: {{Дата}}
+    </div>
+    <table>
+        <tr>
+            <th>Покупатель</th>
+            <td>{{ФИО}}</td>
+        </tr>
+        <tr>
+            <th>Товар</th>
+            <td>{{Товар}}</td>
+        </tr>
+        <tr>
+            <th>Количество</th>
+            <td>{{Количество}}</td>
+        </tr>
+        <tr>
+            <th>Цена</th>
+            <td>{{Цена}}</td>
+        </tr>
+    </table>
+    <p class="total">Итого: {{Итого}}</p>
+</body>
+</html>
