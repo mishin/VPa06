@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Чек {{ invoice_id }}</title>
+</head>
+<body>
+    <h1>Товарный чек</h1>
+    <p>Номер заказа: {{ invoice_id }}</p>
+    <table>
+        <tr>
+            <th>Товар</th>
+            <th>Цена</th>
+            <th>Количество</th>
+        </tr>
+        <tr>
+            <td>{{ product }}</td>
+            <td>{{ price }}</td>
+            <td>{{ qty }}</td>
+        </tr>
+    </table>
+</body>
+</html>
